@@ -34,7 +34,6 @@
             <label for="answer" class="col-sm-2 col-form-label">Answer</label>
 
             <div class="col-sm-7">
-
                 <textarea name="answer" class="form-control {{$errors->first('answer') ? "is-invalid" : "" }} "  id="" cols="30" rows="10">{{old('answer') ? old('answer') : $faq->answer}}</textarea>
                 <div class="invalid-feedback">
                     {{ $errors->first('answer') }}    

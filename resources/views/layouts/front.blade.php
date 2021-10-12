@@ -56,16 +56,17 @@
         <ul>
           <li {{ request()->is('/') ? 'class=active' : '' }}><a href="{{ route('homepage') }}">Beranda</a></li>
 
-          <li class="drop-down"><a href="">Tentang</a>
+          <li {{ request()->is('about-us') ? 'class=active' : '' }}><a href="{{ route('about') }}">Tentang</a></li>
+
+          <!-- <li class="drop-down"><a href="">Tentang</a>
             <ul>
-              <li {{ request()->is('about-us') ? 'class=active' : '' }}><a href="{{ route('about') }}">Tentang Kami</a></li>
               <li {{ request()->is('testimonials') ? 'class=active' : '' }}><a href="{{ route('testi') }}">Feedback</a></li>
             </ul>
-          </li>
+          </li> -->
 
           <li {{ request()->is('services') ? 'class=active' : '' }}><a href="{{ route('service') }}">Pelayanan</a></li>
           <li {{ request()->is('portfolio') ? 'class=active' : '' }}><a href="{{ route('portfolio') }}">Portofolio</a></li>
-          <li {{ request()->is('blog') ? 'class=active' : '' }}><a href="{{ route('blog') }}">Blog</a></li>
+          <!-- <li {{ request()->is('blog') ? 'class=active' : '' }}><a href="{{ route('blog') }}">Blog</a></li> -->
       
         </ul>
       </nav><!-- .nav-menu -->
@@ -90,15 +91,15 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Perusahaan</h3>
+            <h3>perusahaan</h3>
             <p>
               {{ $general->address1 }} <br>
               
-              <a href="{{ $general->gmaps }}" target="_blank" rel="noopener noreferrer">(Go to gmaps)</a>
+              <a href="{{ $general->gmaps }}" target="_blank" rel="noopener noreferrer">(Pergi ke Google Maps)</a>
               <br><br>
               
-              <strong>Phone:</strong> {{ $general->phone }}<br>
-              <strong>Email:</strong> {{ $general->email }}<br>
+              <strong>Telepon:</strong> {{ $general->phone }}<br>
+              <strong>E-mail:</strong> {{ $general->email }}<br>
             </p>
           </div>
 
@@ -113,7 +114,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Latest Posts</h4>
+            <h4>Blog Posts</h4>
             <ul>
               @foreach ($lpost as $lpost)
               <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blogshow',$lpost->slug) }}">{{ $lpost->title }}</a></li>
@@ -150,7 +151,7 @@
 
     <div class="container d-md-flex py-4">
 
-      <div class="mr-md-auto text-center text-md-left">
+      <div class="mr-md-auto text-center text-md-left mt-2">
         <div class="copyright">
           &copy; Copyright <strong><span>{{ $general->footer }}</span></strong>. All Rights Reserved
         </div>
@@ -159,7 +160,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-          Designed by <a href="">BootstrapMade</a> ・ Developed by <a href="">Codelapan</a>
+          <!-- Designed by <a href="">BootstrapMade</a> ・ Developed by <a href="">Codelapan</a> -->
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

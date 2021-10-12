@@ -6,10 +6,10 @@
         <div class="container">
   
           <div class="d-flex justify-content-between align-items-center">
-            <h2>About</h2>
+            <h2>Tentang</h2>
             <ol>
-              <li><a href="/">Home</a></li>
-              <li>About</li>
+              <li><a href="/">Beranda</a></li>
+              <li>Tentang</li>
             </ol>
           </div>
   
@@ -41,8 +41,8 @@
         <div class="container">
   
           <div class="section-title" data-aos="fade-up">
-            <h2>Our <strong>Team</strong></h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>Tim <strong>Kami</strong></h2>
+            <p>Struktur perusahaan yang ada di PT Bromo Steel Indonesia (BOSTO)</p>
           </div>
   
           <div class="row">
@@ -102,7 +102,7 @@
         <div class="container" data-aos="fade-up">
   
           <div class="section-title">
-            <h2>Frequently Asked Questions</h2>
+            <h2>Gambaran Umum Perusahaan</h2>
           </div>
   
           <div class="faq-list">

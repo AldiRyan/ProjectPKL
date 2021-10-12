@@ -12,7 +12,7 @@
   <title>PT BOSTO - Admin Login</title>
 
   <!-- FavIcon -->  
-  <link href="img/logo.png" rel="apple-touch-icon">
+  <link href="img/logo1.png" rel="apple-touch-icon">
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
