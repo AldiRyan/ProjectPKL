@@ -6,10 +6,10 @@
         <div class="container">
   
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Tentang</h2>
+            <h2>Profil Perusahaan</h2>
             <ol>
               <li><a href="/">Beranda</a></li>
-              <li>Tentang</li>
+              <li>Profil</li>
             </ol>
           </div>
   
@@ -23,7 +23,7 @@
           <div class="row content">
             <div class="col-lg-6" data-aos="fade-right">
               <h2>{{ $about->title }}</h2>
-              <h3>{{ $about->subject }}</h3>
+              <!-- <h3>{{ $about->subject }}</h3> -->
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
               <p>
@@ -41,8 +41,8 @@
         <div class="container">
   
           <div class="section-title" data-aos="fade-up">
-            <h2>Tim <strong>Kami</strong></h2>
-            <p>Struktur perusahaan yang ada di PT Bromo Steel Indonesia (BOSTO)</p>
+            <h2>Struktur <strong>Perusahaan</strong></h2>
+            <p>Berikut struktur perusahaan yang ada di PT Bromo Steel Indonesia (BOSTO)</p>
           </div>
   
           <div class="row">

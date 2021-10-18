@@ -56,7 +56,7 @@
         <ul>
           <li {{ request()->is('/') ? 'class=active' : '' }}><a href="{{ route('homepage') }}">Beranda</a></li>
 
-          <li {{ request()->is('about-us') ? 'class=active' : '' }}><a href="{{ route('about') }}">Tentang</a></li>
+          <li {{ request()->is('about-us') ? 'class=active' : '' }}><a href="{{ route('about') }}">Profil</a></li>
 
           <!-- <li class="drop-down"><a href="">Tentang</a>
             <ul>
@@ -72,10 +72,11 @@
       </nav><!-- .nav-menu -->
 
       <div class="header-social-links">
-        <a href="{{ $general->twitter }}" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
+        <!-- <a href="{{ $general->twitter }}" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="{{ $general->facebook }}" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
         <a href="{{ $general->instagram }}" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="{{ $general->linkedin }}" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="{{ $general->linkedin }}" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></i></a> -->
+        <button type="button" class="btn btn-outline-primary btn-sm">Login</button>
       </div>
 
     </div>
@@ -114,12 +115,16 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Blog Posts</h4>
+            <h4>Social Media</h4>
             <ul>
-              @foreach ($lpost as $lpost)
+              <!-- @foreach ($lpost as $lpost)
               <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blogshow',$lpost->slug) }}">{{ $lpost->title }}</a></li>
-              @endforeach
-             
+              @endforeach -->
+                
+              <li><a href="{{ $general->twitter }}" target="_blank" class="twitter"><i class="bx bxl-twitter"></i>Twitter</a></li>
+              <li><a href="{{ $general->facebook }}" target="_blank" class="facebook"><i class="bx bxl-facebook"></i>Facebook</a></li>
+              <li><a href="{{ $general->instagram }}" target="_blank" class="instagram"><i class="bx bxl-instagram"></i>Instagram</a></li>
+              <li><a href="{{ $general->linkedin }}" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i>Linkedin</a></li>
             </ul>
           </div>
 
@@ -163,12 +168,12 @@
           <!-- Designed by <a href="">BootstrapMade</a> ・ Developed by <a href="">Codelapan</a> -->
         </div>
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="{{ $general->twitter }}" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="{{ $general->facebook }}" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="{{ $general->instagram }}" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="{{ $general->linkedin }}" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
+      </div> -->
     </div>
   </footer><!-- End Footer -->
 

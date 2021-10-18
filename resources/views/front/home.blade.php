@@ -124,7 +124,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Portofolio</h2>
         </div>
 
         <div class="row" data-aos="fade-up">
