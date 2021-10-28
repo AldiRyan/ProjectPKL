@@ -24,7 +24,7 @@
                     <th>Cover</th>
                     <th>Title</th>
                     <th>desc</th>
-                    <th>link</th>
+                    <!-- <th>link</th> -->
                     <th>Option</th>
                   </tr>
                 </thead>
@@ -40,7 +40,7 @@
                     </td>
                     <td>{{ $banner->title }}</td>
                     <td>{{Str::limit( strip_tags( $banner->desc ), 100 )}}</td>
-                    <td>{{ $banner->link }}</td>
+                    <!-- <td>{{ $banner->link }}</td> -->
                     <td>
                         <a href="{{route('admin.banner.edit', [$banner->id])}}" class="btn btn-info btn-sm"> Edit </a>
                 

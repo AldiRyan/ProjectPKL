@@ -10,7 +10,7 @@
 
 <!-- Page Heading -->
 
-<h1 class="h3 mb-2 text-gray-800">Team</h1>     
+<h1 class="h3 mb-2 text-gray-800">Struktur Perusahaan</h1>     
    
 @if (session('success'))
 
@@ -28,7 +28,7 @@
 
     <div class="card-header py-3">
 
-        <a href="{{ route('admin.team.create') }}" class="btn btn-success">Create team</a>
+        <a href="{{ route('admin.team.create') }}" class="btn btn-success">Tambah Anggota</a>
 
     </div>
 

@@ -9,10 +9,11 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PT BOSTO - Admin Login</title>
-
-  <!-- FavIcon -->  
+  <!-- Favicons -->
+  <link href="img/logo1.png" rel="icon">
   <link href="img/logo1.png" rel="apple-touch-icon">
+
+  <title>PT BOSTO - Admin Login</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

@@ -56,7 +56,7 @@
         <ul>
           <li {{ request()->is('/') ? 'class=active' : '' }}><a href="{{ route('homepage') }}">Beranda</a></li>
 
-          <li {{ request()->is('about-us') ? 'class=active' : '' }}><a href="{{ route('about') }}">Profil</a></li>
+          <li {{ request()->is('about-us') ? 'class=active' : '' }}><a href="{{ route('about') }}">Tentang</a></li>
 
           <!-- <li class="drop-down"><a href="">Tentang</a>
             <ul>
@@ -65,18 +65,14 @@
           </li> -->
 
           <li {{ request()->is('services') ? 'class=active' : '' }}><a href="{{ route('service') }}">Pelayanan</a></li>
-          <li {{ request()->is('portfolio') ? 'class=active' : '' }}><a href="{{ route('portfolio') }}">Portofolio</a></li>
+          <li {{ request()->is('portfolio') ? 'class=active' : '' }}><a href="{{ route('portfolio') }}">Produk</a></li>
           <!-- <li {{ request()->is('blog') ? 'class=active' : '' }}><a href="{{ route('blog') }}">Blog</a></li> -->
       
         </ul>
       </nav><!-- .nav-menu -->
 
       <div class="header-social-links">
-        <!-- <a href="{{ $general->twitter }}" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="{{ $general->facebook }}" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="{{ $general->instagram }}" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="{{ $general->linkedin }}" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></i></a> -->
-        <button type="button" class="btn btn-outline-primary btn-sm">Login</button>
+        <button href="" type="button" class="btn btn-outline-primary btn-sm">Login</button>
       </div>
 
     </div>
@@ -105,7 +101,7 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Halaman</h4>
             <ul>
               @foreach ($link as $link)
               <li><i class="bx bx-chevron-right"></i> <a href="{{ $link->link }}">{{ $link->name }}</a></li>
@@ -115,12 +111,8 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Social Media</h4>
+            <h4>Sosial Media</h4>
             <ul>
-              <!-- @foreach ($lpost as $lpost)
-              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blogshow',$lpost->slug) }}">{{ $lpost->title }}</a></li>
-              @endforeach -->
-                
               <li><a href="{{ $general->twitter }}" target="_blank" class="twitter"><i class="bx bxl-twitter"></i>Twitter</a></li>
               <li><a href="{{ $general->facebook }}" target="_blank" class="facebook"><i class="bx bxl-facebook"></i>Facebook</a></li>
               <li><a href="{{ $general->instagram }}" target="_blank" class="instagram"><i class="bx bxl-instagram"></i>Instagram</a></li>
@@ -154,11 +146,10 @@
       </div>
     </div>
 
-    <div class="container d-md-flex py-4">
-
+    <div class="container py-4 my-auto">
       <div class="mr-md-auto text-center text-md-left mt-2">
-        <div class="copyright">
-          &copy; Copyright <strong><span>{{ $general->footer }}</span></strong>. All Rights Reserved
+        <div class="copyright text-center my-auto">
+          <span>Copyright &copy; <strong>PT Bromo Steel Indonesia (BOSTO)</strong> 2021</span>. Developed by <strong>Team PKL</strong>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
@@ -168,12 +159,6 @@
           <!-- Designed by <a href="">BootstrapMade</a> ・ Developed by <a href="">Codelapan</a> -->
         </div>
       </div>
-      <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="{{ $general->twitter }}" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="{{ $general->facebook }}" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="{{ $general->instagram }}" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="{{ $general->linkedin }}" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div> -->
     </div>
   </footer><!-- End Footer -->
 

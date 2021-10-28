@@ -8,10 +8,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portofolio</h2>
+          <h2>Produk</h2>
           <ol>
             <li><a href="/">Beranda</a></li>
-            <li>Portofolio</li>
+            <li>Produk</li>
           </ol>
         </div>
 
