@@ -9,6 +9,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+  <!-- Favicons -->
+  <link href="img/logo1.png" rel="icon">
+  <link href="img/logo1.png" rel="apple-touch-icon">
+
   <title>Admin - Dashboard</title>
 
   <!-- Custom fonts for this template-->
@@ -39,11 +43,11 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('admin.dashboard') }}">
-        <div class="sidebar-brand-text mx-3">Administrator</div>
+        <div class="sidebar-brand-text mx-3">Admin PT. BOSTO</div>
       </a>
 
       <!-- Divider -->
@@ -63,7 +67,7 @@
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-table"></i>
           <span>Blog</span>
@@ -76,18 +80,18 @@
             <a class="collapse-item" href="{{ route('admin.post.trash') }}">Trash</a>
           </div>
         </div>
-      </li>
+      </li> -->
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-table"></i>
-          <span>Portfolio</span>
+          <span>Produk</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="{{ route('admin.portfolio') }}">Portfolio</a>
-            <a class="collapse-item" href="{{ route('admin.pcategory') }}">Portfolio Categories</a>
+            <a class="collapse-item" href="{{ route('admin.portfolio') }}">Produk</a>
+            <a class="collapse-item" href="{{ route('admin.pcategory') }}">Kategori Produk</a>
           </div>
         </div>
       </li>
@@ -95,56 +99,56 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.faq') }}">
           <i class="fas fa-fw fa-table"></i>
-          <span>FAQ</span></a>
-      </li>
+          <span>Profil</span></a>
+      </li> 
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.link') }}">
           <i class="fas fa-fw fa-table"></i>
           <span>Links</span></a>
-      </li>
+      </li> -->
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.page') }}">
           <i class="fas fa-fw fa-table"></i>
           <span>Pages</span></a>
-      </li>
+      </li> -->
 
       <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.partner') }}">
           <i class="fas fa-fw fa-table"></i>
-          <span>Partners</span></a>
+          <span>Partner</span></a>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.service') }}">
           <i class="fas fa-fw fa-table"></i>
-          <span>Services</span></a>
-      </li>
+          <span>Pelayanan</span></a>
+      </li> -->
 
       <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.team') }}">
           <i class="fas fa-fw fa-table"></i>
-          <span>Team</span></a>
+          <span>Struktur Perusahaan</span></a>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.testi') }}">
           <i class="fas fa-fw fa-table"></i>
           <span>Testimonials</span></a>
-      </li>
+      </li> -->
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>Settings</span>
+          <span>Pengaturan</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="{{ route('admin.about') }}">About</a>
-            <a class="collapse-item" href="{{ route('admin.banner') }}">Banner</a>
-            <a class="collapse-item" href="{{ route('admin.general') }}">General Settings</a>
+            <a class="collapse-item" href="{{ route('admin.about') }}">Tentang</a>
+            <a class="collapse-item" href="{{ route('admin.banner') }}">Carousel</a>
+            <a class="collapse-item" href="{{ route('admin.general') }}">Pengaturan Umum</a>
           </div>
         </div>
       </li>
@@ -212,7 +216,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; PT Bromo Steel Indonesia (BOSTO) 2021</span>
+            <span>Copyright &copy; <strong>PT Bromo Steel Indonesia (BOSTO)</strong> 2021. Developed by <strong>PKL Team</strong></span>
           </div>
         </div>
       </footer>

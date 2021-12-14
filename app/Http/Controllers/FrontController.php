@@ -40,13 +40,15 @@ class FrontController extends Controller
         $testi = Testimonial::orderBy('name','asc')->paginate(6);
         return view ('front.testi',compact('general','link','lpost','testi'));
     }
+
     public function service()
     {
         $general = General::find(1);
         $link = Link::orderBy('name','asc')->get();
         $lpost = Post::where('status','=','PUBLISH')->orderBy('id','desc')->limit(5)->get();
         $service = Service::orderBy('title','asc')->get();
-        return view ('front.service',compact('general','link','lpost','service'));
+        $partner = Partner::orderBy('name','asc')->get();
+        return view ('front.service',compact('general','link','lpost','service','partner'));
     }
 
     public function serviceshow($slug)

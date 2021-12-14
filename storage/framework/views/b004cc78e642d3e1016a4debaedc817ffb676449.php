@@ -3,11 +3,10 @@
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
   
-          <div class="d-flex justify-content-between align-items-center">
-            <h2>Tentang</h2>
+          <div class="d-flex justify-content-start align-items-center text-center mt-1">
             <ol>
-              <li><a href="/">Beranda</a></li>
-              <li>Tentang</li>
+              <li><a href="/">Home</a></li>
+              <li>Profile</li>
             </ol>
           </div>
   
@@ -40,7 +39,7 @@
         <div class="container">
   
           <div class="section-title" data-aos="fade-up">
-            <h2>Tim <strong>Kami</strong></h2>
+            <h2>Our <strong>Team</strong></h2>
             <p>Struktur perusahaan yang ada di PT Bromo Steel Indonesia (BOSTO)</p>
           </div>
   
@@ -72,15 +71,13 @@
       </section><!-- End Our Team Section -->
   
       <!-- ======= Our Clients Section ======= -->
-      <section id="clients" class="clients">
+      <!-- <section id="clients" class="clients">
         <div class="container" data-aos="fade-up">
-  
           <div class="section-title">
             <h2>Partners</h2>
           </div>
   
           <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-  
             <?php $__currentLoopData = $partner; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $partner): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="col-lg-3 col-md-4 col-6">
               <div class="client-logo">
@@ -90,18 +87,17 @@
               </div>
             </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-  
           </div>
   
         </div>
-      </section><!-- End Our Clients Section -->
+      </section> --><!-- End Our Clients Section -->
 
-       <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq section-bg">
         <div class="container" data-aos="fade-up">
   
           <div class="section-title">
-            <h2>Gambaran Umum Perusahaan</h2>
+            <h2>GENERAL DESCRIPTION</h2>
           </div>
   
           <div class="faq-list">

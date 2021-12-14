@@ -10,7 +10,7 @@
 
 <!-- Page Heading -->
 
-<h1 class="h3 mb-2 text-gray-800">Portfolio Categories</h1>     
+<h1 class="h3 mb-2 text-gray-800">Kategori Portofolio</h1>     
    
 @if (session('success'))
 
@@ -37,7 +37,7 @@
                 {{ $errors->first('name') }}    
             </div> 
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Tambah Category</button>
+            <button type="submit" class="btn btn-primary mb-2">Tambah Kategori</button>
           </form>
 
     </div>

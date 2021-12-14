@@ -8,7 +8,7 @@
 
 <!-- Page Heading -->
 
-<h1 class="h3 mb-2 text-gray-800">Portfolios</h1>     
+<h1 class="h3 mb-2 text-gray-800">Portofolio</h1>     
    
 <?php if(session('success')): ?>
 
@@ -27,7 +27,7 @@
 
     <div class="card-header py-3">
 
-        <a href="<?php echo e(route('admin.portfolio.create')); ?>" class="btn btn-success">Create Portfolio</a>
+        <a href="<?php echo e(route('admin.portfolio.create')); ?>" class="btn btn-success">Tambah Portofolio</a>
 
     </div>
 

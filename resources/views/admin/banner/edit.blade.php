@@ -90,7 +90,7 @@
       
     </div>
 
-    <div class="form-group ml-5">
+    <!--<div class="form-group ml-5">
       <label for="link" class="col-sm-2 col-form-label">Link</label>
       <div class="col-sm-7">
         <input type="text" name='link' class="form-control {{$errors->first('link') ? "is-invalid" : "" }} " value="{{old('link') ? old('link') : $banner->link}}" id="link" placeholder="Link">
@@ -98,7 +98,7 @@
           {{ $errors->first('link') }}    
       </div> 
       </div>
-    </div>
+    </div> -->
 
     <div class="form-group ml-5">
         <div class="col-sm-3">

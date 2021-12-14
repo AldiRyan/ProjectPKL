@@ -43,7 +43,7 @@
     
                
                 <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
+            <!--    <div class="col-xl-3 col-md-6 mb-4">
                   <div class="card border-left-success shadow h-100 py-2">
                     <div class="card-body">
                       <div class="row no-gutters align-items-center">
@@ -57,7 +57,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
     
                 <!-- Pending Requests Card Example -->
                 <div class="col-xl-3 col-md-6 mb-4">
@@ -75,6 +75,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> 
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.admin', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\applications\companyprofile\resources\views/admin/dashboard.blade.php ENDPATH**/ ?>

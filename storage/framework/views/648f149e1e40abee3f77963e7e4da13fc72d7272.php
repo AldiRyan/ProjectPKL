@@ -4,12 +4,11 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portofolio</h2>
+        
+        <div class="d-flex justify-content-start align-items-center mt-1">
           <ol>
-            <li><a href="/">Beranda</a></li>
-            <li>Portofolio</li>
+            <li><a href="/">Home</a></li>
+            <li>Product</li>
           </ol>
         </div>
 
@@ -37,10 +36,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item <?php echo e($portfolio->pcategory_id); ?>">
             <img src="<?php echo e(asset('storage/'.$portfolio->cover)); ?>" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4><?php echo e($portfolio->name); ?></h4>
-              <p><?php echo e($portfolio->pcategory->name); ?></p>
-              <a href="<?php echo e(asset('storage/'.$portfolio->cover)); ?>" data-gall="portfolioGallery" class="venobox preview-link" title="<?php echo e($portfolio->name); ?>"><i class="bx bx-plus"></i></a>
-              <a href="<?php echo e(route('portfolioshow',$portfolio->slug)); ?>" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Name</strong>: <?php echo e($portfolio->name); ?></li>
+                <li><strong>Category</strong>:  <?php echo e($portfolio->pcategory->name); ?></li>
+                <li><strong>Client</strong>: <?php echo e($portfolio->client); ?></li>
+                <li><strong>Project date</strong>: <?php echo e(Carbon\Carbon::parse($portfolio->date)->format("d F, Y")); ?></li>
+              </ul>
             </div>
           </div>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

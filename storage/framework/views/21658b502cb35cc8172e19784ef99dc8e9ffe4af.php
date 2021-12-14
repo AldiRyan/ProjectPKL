@@ -45,39 +45,32 @@
   ======================================================== -->
 </head>
 
+
 <body>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
-      <a href="/" class="logo mr-auto"><img src="<?php echo e(asset('storage/'.$general->logo)); ?>" alt="" class="img-fluid"></a>
+      <a href="/" class="logo mr-auto"><img src="<?php echo e(asset('storage/'.$general->logo)); ?>" alt="" class="logo-big" style="min-height: 50px; width: auto;"></a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li <?php echo e(request()->is('/') ? 'class=active' : ''); ?>><a href="<?php echo e(route('homepage')); ?>">Beranda</a></li>
-
-          <li <?php echo e(request()->is('about-us') ? 'class=active' : ''); ?>><a href="<?php echo e(route('about')); ?>">Tentang</a></li>
-
+          <li <?php echo e(request()->is('/') ? 'class=active' : ''); ?>><a href="<?php echo e(route('homepage')); ?>">Home</a></li>
+          <li <?php echo e(request()->is('about-us') ? 'class=active' : ''); ?>><a href="<?php echo e(route('about')); ?>">Profile</a></li>
           <!-- <li class="drop-down"><a href="">Tentang</a>
             <ul>
               <li <?php echo e(request()->is('testimonials') ? 'class=active' : ''); ?>><a href="<?php echo e(route('testi')); ?>">Feedback</a></li>
             </ul>
           </li> -->
-
-          <li <?php echo e(request()->is('services') ? 'class=active' : ''); ?>><a href="<?php echo e(route('service')); ?>">Pelayanan</a></li>
-          <li <?php echo e(request()->is('portfolio') ? 'class=active' : ''); ?>><a href="<?php echo e(route('portfolio')); ?>">Portofolio</a></li>
+          <li <?php echo e(request()->is('portfolio') ? 'class=active' : ''); ?>><a href="<?php echo e(route('portfolio')); ?>">Product</a></li>
+          <li <?php echo e(request()->is('services') ? 'class=active' : ''); ?>><a href="<?php echo e(route('service')); ?>">Contact Us</a></li>
           <!-- <li <?php echo e(request()->is('blog') ? 'class=active' : ''); ?>><a href="<?php echo e(route('blog')); ?>">Blog</a></li> -->
       
         </ul>
       </nav><!-- .nav-menu -->
 
-      <div class="header-social-links">
-        <a href="<?php echo e($general->twitter); ?>" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="<?php echo e($general->facebook); ?>" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="<?php echo e($general->instagram); ?>" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="<?php echo e($general->linkedin); ?>" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
+      <!-- <div class="header-social-links">
+        <button type="button" class="btn btn-outline-primary btn-sm"><a  href="<?php echo e(asset('login')); ?>">Admin</a></button>
+      </div> -->
 
     </div>
   </header><!-- End Header -->
@@ -92,14 +85,14 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>perusahaan</h3>
+            <h3><strong>Address</strong></h3>
             <p>
               <?php echo e($general->address1); ?> <br>
               
-              <a href="<?php echo e($general->gmaps); ?>" target="_blank" rel="noopener noreferrer">(Pergi ke Google Maps)</a>
+              <a href="<?php echo e($general->gmaps); ?>" target="_blank" rel="noopener noreferrer">(Go to Google Maps)</a>
               <br><br>
               
-              <strong>Telepon:</strong> <?php echo e($general->phone); ?><br>
+              <strong>Phone:</strong> <?php echo e($general->phone); ?><br>
               <strong>E-mail:</strong> <?php echo e($general->email); ?><br>
             </p>
           </div>
@@ -115,12 +108,12 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Blog Posts</h4>
+            <h4>Social Media</h4>
             <ul>
-              <?php $__currentLoopData = $lpost; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lpost): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?php echo e(route('blogshow',$lpost->slug)); ?>"><?php echo e($lpost->title); ?></a></li>
-              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-             
+              <li><a href="<?php echo e($general->twitter); ?>" target="_blank" class="twitter"><i class="bx bxl-twitter"></i>Twitter</a></li>
+              <li><a href="<?php echo e($general->facebook); ?>" target="_blank" class="facebook"><i class="bx bxl-facebook"></i>Facebook</a></li>
+              <li><a href="<?php echo e($general->instagram); ?>" target="_blank" class="instagram"><i class="bx bxl-instagram"></i>Instagram</a></li>
+              <li><a href="<?php echo e($general->linkedin); ?>" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i>Linkedin</a></li>
             </ul>
           </div>
 
@@ -151,11 +144,10 @@
       </div>
     </div>
 
-    <div class="container d-md-flex py-4">
-
+    <div class="container py-2 my-auto">
       <div class="mr-md-auto text-center text-md-left mt-2">
-        <div class="copyright">
-          &copy; Copyright <strong><span><?php echo e($general->footer); ?></span></strong>. All Rights Reserved
+        <div class="copyright text-center my-auto">
+          <span>Copyright &copy; <strong>PT Bromo Steel Indonesia (BOSTO)</strong> 2021</span>. Developed by <strong>PKL Team</strong>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
@@ -164,12 +156,6 @@
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
           <!-- Designed by <a href="">BootstrapMade</a> ・ Developed by <a href="">Codelapan</a> -->
         </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="<?php echo e($general->twitter); ?>" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="<?php echo e($general->facebook); ?>" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="<?php echo e($general->instagram); ?>" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="<?php echo e($general->linkedin); ?>" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->

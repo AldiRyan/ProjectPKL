@@ -70,7 +70,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Tentang Kami</strong></h2>
+          <h2>About Us</strong></h2>
         </div>
 
         <div class="row content">
@@ -89,7 +89,7 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+  <!--  <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -116,7 +116,7 @@
 
         </div>
 
-      </div>
+      </div> -->
     </section><!-- End Services Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -124,7 +124,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Product</h2>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -144,10 +144,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item {{ $portfolio->pcategory_id }}">
             <img src="{{ asset('storage/'.$portfolio->cover) }}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>{{ $portfolio->name }}</h4>
-              <p>{{ $portfolio->pcategory->name }}</p>
-              <a href="{{ asset('storage/'.$portfolio->cover) }}" data-gall="portfolioGallery" class="venobox preview-link" title="{{ $portfolio->name }}"><i class="bx bx-plus"></i></a>
-              <a href="{{ route('portfolioshow',$portfolio->slug) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Name</strong>: {{ $portfolio->name }}</li>
+                <li><strong>Category</strong>:  {{ $portfolio->pcategory->name }}</li>
+                <li><strong>Client</strong>: {{ $portfolio->client }}</li>
+                <li><strong>Project date</strong>: {{ Carbon\Carbon::parse($portfolio->date)->format("d F, Y") }}</li>
+              </ul>
             </div>
           </div>
           @endforeach
@@ -170,7 +173,7 @@
           @foreach ($partner as $partner)
           <div class="col-lg-3 col-md-4 col-6">
             <div class="client-logo">
-              <a href="{{ $partner->link }}" target="_blank" rel="noopener noreferrer">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <img src="{{ asset('storage/'.$partner->cover) }}" class="img-fluid" alt="{{ $partner->name }}">
               </a>
             </div>

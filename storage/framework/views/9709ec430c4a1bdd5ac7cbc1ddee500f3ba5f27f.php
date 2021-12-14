@@ -23,7 +23,7 @@
                     <th>Cover</th>
                     <th>Title</th>
                     <th>desc</th>
-                    <th>link</th>
+                    <!-- <th>link</th> -->
                     <th>Option</th>
                   </tr>
                 </thead>
@@ -39,7 +39,7 @@
                     </td>
                     <td><?php echo e($banner->title); ?></td>
                     <td><?php echo e(Str::limit( strip_tags( $banner->desc ), 100 )); ?></td>
-                    <td><?php echo e($banner->link); ?></td>
+                    <!-- <td><?php echo e($banner->link); ?></td> -->
                     <td>
                         <a href="<?php echo e(route('admin.banner.edit', [$banner->id])); ?>" class="btn btn-info btn-sm"> Edit </a>
                 
